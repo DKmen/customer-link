@@ -11,7 +11,7 @@
     "dev": "concurrently npm:dev:ts npm:dev:node",
     "dev:ts": "tsc --watch",
     "dev:node": "tsc && cp .env dist/ && nodemon --watch dist dist/server.js",
-    "start": "tsc && cp .env dist/ && node dist/server.js",
+    "start": "node dist/server.js",
     "release": "standard-version",
     "release:minor": "standard-version --release-as minor",
     "release:patch": "standard-version --release-as patch",
